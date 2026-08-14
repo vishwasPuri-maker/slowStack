@@ -54,10 +54,10 @@ files. Running it twice with the same name errors cleanly instead of clobbering.
 
 The familiar MVC layout. Build this first because it's the easier one.
 
-- [ ] Files exactly as listed in `docs/TEMPLATE-SPEC.md`
-- [ ] A working CRUD resource (notes), in-memory array store
-- [ ] Every file has its top-of-file "why" comment
-- [ ] Boots and responds with only `npm install && npm run dev`
+- [x] Files exactly as listed in `docs/TEMPLATE-SPEC.md`
+- [x] A working CRUD resource (notes), in-memory array store
+- [x] Every file has its top-of-file "why" comment
+- [x] Boots and responds with only `npm install && npm run dev`
 
 **Acceptance:** generate it, install, run, and hit all CRUD routes successfully
 with curl. No database, no `.env` needed.
