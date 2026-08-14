@@ -11,7 +11,7 @@ No code. Blocks everything else.
 
 - [x] Package name chosen and confirmed available on npm — `slowstack`
 - [x] Name placeholder replaced everywhere in this repo
-- [ ] npm account created, `npm whoami` works
+- [x] npm account created, `npm whoami` works
 - [x] `git init` and first commit
 
 **Naming rules:** short, no `express` in the name (trademark), easy to say aloud.
