@@ -39,11 +39,11 @@ Do not build templates yet.
 
 Make the copy actually happen.
 
-- [ ] `src/scaffold.js` — resolve template dir from `import.meta.url`, copy with `fs.cpSync(..., { recursive: true })`
-- [ ] Error if target folder already exists — never overwrite
-- [ ] Write the user's chosen name into the generated `package.json`'s `name` field
-- [ ] Rename `gitignore` → `.gitignore` on copy (npm strips dotfiles from published packages — templates must store it undotted)
-- [ ] Print next steps after success: `cd`, `npm install`, `npm run dev`
+- [x] `src/scaffold.js` — resolve template dir from `import.meta.url`, copy with `fs.cpSync(..., { recursive: true })`
+- [x] Error if target folder already exists — never overwrite
+- [x] Write the user's chosen name into the generated `package.json`'s `name` field
+- [x] Rename `gitignore` → `.gitignore` on copy (npm strips dotfiles from published packages — templates must store it undotted)
+- [x] Print next steps after success: `cd`, `npm install`, `npm run dev`
 
 **Acceptance:** run the CLI, pick `classic`, and the folder appears with correct
 files. Running it twice with the same name errors cleanly instead of clobbering.

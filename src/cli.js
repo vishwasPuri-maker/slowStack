@@ -1,5 +1,6 @@
 import { input, select } from '@inquirer/prompts';
 import { structures } from './structures.js';
+import { scaffold } from './scaffold.js';
 
 export async function run() {
   const name = await input({
@@ -12,5 +13,11 @@ export async function run() {
     choices: structures,
   });
 
-  console.log({ name, structure });
+  scaffold({ name, structure });
+
+  console.log(`\nCreated ${name}/ using the ${structure} structure.`);
+  console.log('\nNext:\n');
+  console.log(`  cd ${name}`);
+  console.log('  npm install');
+  console.log('  npm run dev\n');
 }
