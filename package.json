@@ -1,0 +1,28 @@
+{
+  "name": "slowstack",
+  "version": "0.1.0",
+  "description": "Scaffold an Express backend that explains itself. Built for people learning what a controller actually is.",
+  "type": "module",
+  "bin": {
+    "slowstack": "bin/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "express",
+    "scaffold",
+    "generator",
+    "boilerplate",
+    "backend",
+    "beginner",
+    "learn",
+    "tutorial",
+    "rest-api"
+  ],
+  "author": "vishwaspuri",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^8.5.2"
+  }
+}

@@ -22,11 +22,11 @@ No code. Blocks everything else.
 
 Get one command running. Nothing is generated yet.
 
-- [ ] `package.json` with `name`, `"type": "module"`, and a `bin` field
-- [ ] `bin/index.js` with `#!/usr/bin/env node` shebang, imports and calls `run()`
-- [ ] `src/cli.js` — prompts for project name (default `my-api`) and structure
-- [ ] `src/structures.js` — array of structure definitions, single source of truth
-- [ ] Ctrl+C exits cleanly (catch `ExitPromptError`, no stack trace)
+- [x] `package.json` with `name`, `"type": "module"`, and a `bin` field
+- [x] `bin/index.js` with `#!/usr/bin/env node` shebang, imports and calls `run()`
+- [x] `src/cli.js` — prompts for project name (default `my-api`) and structure
+- [x] `src/structures.js` — array of structure definitions, single source of truth
+- [x] Ctrl+C exits cleanly (catch `ExitPromptError`, no stack trace)
 
 **Acceptance:** `node bin/index.js` shows an arrow-key menu, collects both
 answers, prints them, exits 0. Ctrl+C prints nothing ugly.
