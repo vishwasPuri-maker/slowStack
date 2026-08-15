@@ -68,10 +68,14 @@ with curl. No database, no `.env` needed.
 
 **This is the actual product. Do not rush it.**
 
-- [ ] Meaningfully fewer files than classic — see spec
-- [ ] Comment density is the point; err on the side of over-explaining
-- [ ] `LEARN.md` in the generated project: the story of why the split happened, written as a progression
-- [ ] Same CRUD resource as classic, so the two can be compared side by side
+- [x] Meaningfully fewer files than classic — see spec (5 js files vs 8)
+- [x] Comment density is the point; err on the side of over-explaining (62% vs 40%)
+- [x] `LEARN.md` in the generated project: the story of why the split happened, written as a progression
+- [x] Same CRUD resource as classic, so the two can be compared side by side
+
+> Acceptance below is a **human** test and has not been run yet. The four boxes
+> above only cover what is machine-checkable. Read the generated project with
+> someone new to backends before treating this phase as finished.
 
 **Acceptance:** someone who has never written a backend can read the generated
 files top to bottom and explain, in their own words, why routes and controllers
