@@ -5,6 +5,30 @@ The exact contents of `templates/`. This is the product; the CLI is just deliver
 Both templates implement the same thing — CRUD for **notes**, stored in an
 in-memory array — so a learner can generate both and diff them.
 
+## Layout
+
+```
+templates/<language>/<structure>/
+```
+
+`<language>` is `en` or `hi`; `<structure>` is `beginner` or `classic`. Four
+folders in total.
+
+**The code is identical across languages. Only the prose changes.** A learner
+who picks `hi` gets Hindi explanations in Roman script, with code, keywords and
+technical words (`middleware`, `router`, `req.body`, status codes) left in
+English — because those are the words they will meet in every error message,
+every Stack Overflow answer and every job.
+
+Duplication here is real and deliberate: prose cannot be parameterised. A logic
+fix in one language's template must be applied in the other.
+
+What must stay identical across languages: control flow, status codes, file
+list, function and variable names. What is translated: comments, `LEARN.md`,
+seed data, `console.log` output and the `error` strings in responses — a learner
+reads those the same way they read a comment. Diff two languages and every
+change should be a string or a comment; anything else is drift, and a bug.
+
 ## Shared rules
 
 - ESM, `"type": "module"`, Node >= 18

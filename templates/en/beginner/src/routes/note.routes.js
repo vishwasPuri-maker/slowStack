@@ -20,9 +20,10 @@ const router = Router();
 
 // These paths look wrong at first glance. Where is /api/notes?
 //
-// It is in app.js, which mounts this router at '/api/notes'. So '/' down here
-// really means /api/notes, and '/:id' really means /api/notes/:id. The payoff:
-// moving this whole resource to /v2/notes is one edit in app.js, not five here.
+// It is in app.js, which plugs this file in at '/api/notes'. So '/' down here
+// really means /api/notes, and '/:id' really means /api/notes/:id. What that
+// buys you: moving all five addresses to /v2/notes is one change in app.js,
+// instead of five changes here.
 //
 // The ':id' part is a placeholder. A request to /api/notes/7 matches '/:id',
 // and the controller reads that 7 as req.params.id.

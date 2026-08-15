@@ -7,8 +7,11 @@ import { fileURLToPath } from 'node:url';
 const packageRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const templatesDir = path.join(packageRoot, 'templates');
 
-export function scaffold({ name, structure }) {
-  const source = path.join(templatesDir, structure);
+export function scaffold({ name, structure, language }) {
+  // templates/<language>/<structure>/ — the same code in both languages, with
+  // the explanations rewritten. Prose cannot be parameterised, so the files are
+  // genuinely duplicated: a logic fix must be applied in both.
+  const source = path.join(templatesDir, language, structure);
   const target = path.join(process.cwd(), name);
 
   if (fs.existsSync(target)) {

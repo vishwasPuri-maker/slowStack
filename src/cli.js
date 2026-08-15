@@ -1,5 +1,6 @@
 import { input, select } from '@inquirer/prompts';
 import { structures } from './structures.js';
+import { languages } from './languages.js';
 import { scaffold } from './scaffold.js';
 
 export async function run() {
@@ -13,7 +14,12 @@ export async function run() {
     choices: structures,
   });
 
-  scaffold({ name, structure });
+  const language = await select({
+    message: 'Explanations in:',
+    choices: languages,
+  });
+
+  scaffold({ name, structure, language });
 
   console.log(`\nCreated ${name}/ using the ${structure} structure.`);
   console.log('\nNext:\n');

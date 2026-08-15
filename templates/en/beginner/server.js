@@ -14,8 +14,9 @@ import app from './src/app.js';
 // nobody sets it, so the || falls through to 3000 and everything just works.
 // That default is why this project runs with no .env file to create first.
 //
-// In a bigger project this line would live in config/env.js with every other
-// setting. With exactly one setting, a folder for it would be ceremony.
+// In a bigger project this line would live in config/env.js, together with
+// every other setting. With exactly one setting, a whole folder for it would be
+// more work than it saves.
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
