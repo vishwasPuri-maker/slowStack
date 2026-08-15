@@ -91,10 +91,12 @@ If that test fails, the phase is not done — regardless of whether the code run
 
 ## Phase 5 — Ship
 
-- [ ] `README.md` — problem, install, usage, a terminal recording or screenshot
-- [ ] `LICENSE` file (MIT) matching `package.json`
-- [ ] `files` array in `package.json` verified with `npm pack --dry-run`
-- [ ] Tested via `npm link` in a fresh directory
+- [x] `README.md` — problem, install, usage, a terminal recording or screenshot
+      (written session transcript, not a recording — no asciinema in the toolchain)
+- [x] `LICENSE` file (MIT) matching `package.json`
+- [x] `files` array in `package.json` verified with `npm pack --dry-run`
+      (44 files, 26.2 kB; zero internal docs leak)
+- [x] Tested via `npm link` in a fresh directory
 - [ ] `npm publish`
 - [ ] `npx slowstack` tested in a clean folder, as a stranger would
 

@@ -9,6 +9,11 @@
   "engines": {
     "node": ">=18"
   },
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
   "keywords": [
     "express",
     "scaffold",
