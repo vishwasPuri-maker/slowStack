@@ -27,6 +27,14 @@
   ],
   "author": "vishwaspuri",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishwasPuri-maker/slowStack.git"
+  },
+  "homepage": "https://github.com/vishwasPuri-maker/slowStack#readme",
+  "bugs": {
+    "url": "https://github.com/vishwasPuri-maker/slowStack/issues"
+  },
   "dependencies": {
     "@inquirer/prompts": "^8.5.2"
   }

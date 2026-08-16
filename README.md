@@ -1,6 +1,14 @@
 # slowstack
 
+[![npm version](https://img.shields.io/npm/v/slowstack.svg)](https://www.npmjs.com/package/slowstack)
+[![node](https://img.shields.io/node/v/slowstack.svg)](https://nodejs.org)
+[![license](https://img.shields.io/npm/l/slowstack.svg)](LICENSE)
+
 Scaffold an Express backend that explains itself.
+
+## Install
+
+Nothing to install — run it:
 
 ```bash
 npx slowstack
@@ -48,10 +56,38 @@ Next:
   npm run dev
 ```
 
-Then:
+The server tells you where it is:
+
+```
+Listening on http://localhost:3000
+Try it:  curl http://localhost:3000/api/notes
+
+New to backends? Open LEARN.md — it explains why these files are split up.
+```
+
+And it already has data in it:
 
 ```bash
 curl http://localhost:3000/api/notes
+```
+
+```json
+[
+  { "id": 1, "title": "First note", "body": "Notes live in memory until you add a database." },
+  { "id": 2, "title": "Second note", "body": "Change me with PUT, remove me with DELETE." }
+]
+```
+
+Create one:
+
+```bash
+curl -X POST http://localhost:3000/api/notes \
+  -H 'Content-Type: application/json' \
+  -d '{"title":"Third note","body":"made by curl"}'
+```
+
+```json
+{ "id": 3, "title": "Third note", "body": "made by curl" }
 ```
 
 ## What you get
