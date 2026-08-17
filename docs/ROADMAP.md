@@ -97,8 +97,9 @@ If that test fails, the phase is not done — regardless of whether the code run
 - [x] `files` array in `package.json` verified with `npm pack --dry-run`
       (44 files, 26.2 kB; zero internal docs leak)
 - [x] Tested via `npm link` in a fresh directory
-- [ ] `npm publish`
-- [ ] `npx slowstack` tested in a clean folder, as a stranger would
+- [x] `npm publish` — slowstack@0.1.0, 2026-08-17. npm now requires 2FA to
+      publish at all; enabling it on the account was the fix for the E403.
+- [x] `npx slowstack` tested in a clean folder, as a stranger would
 
 **Acceptance:** a person who has never seen this repo can go from `npx` to a
 running server without asking you anything.
